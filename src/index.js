@@ -28,5 +28,5 @@ const colorDropdown = document.getElementById('color');
 colorDropdown.addEventListener('change', e => dispatch({ type: "CHANGECOLOR", value: colorDropdown.value }));
 
 // //Text Area
-const textArea = document.getElementById('text');
-textArea.addEventListener('keyup', e => dispatch({ type: "TEXT"}));
+const input = document.getElementById('number');
+input.addEventListener('change', e => dispatch({ type: "NUMBER", value: parseInt(input.value)}));

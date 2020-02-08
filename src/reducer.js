@@ -15,6 +15,11 @@ const reducer = (state = initialState, action) => {
             value: state.value,
             color: value
         }
+    }  else if (type === "NUMBER") {
+        return {
+            value: value,
+            color: state.color
+        }
     }
     return state
 }
