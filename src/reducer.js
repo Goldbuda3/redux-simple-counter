@@ -12,6 +12,14 @@ const reducer = (state = initialState, action) => {
         return {
             value: state.value - 1
         }
+    } else if (type === "INCREMENT5") {
+        return {
+            value: state.value + 5
+        }
+    } else if (type === "DECREMENT5") {
+        return {
+            value: state.value - 5
+        }
     }
     return state
 }

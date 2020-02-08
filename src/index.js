@@ -11,6 +11,14 @@ subscribe(() => render(getState()))
 const incrementButton = document.getElementById('increment');
 incrementButton.addEventListener('click', e => dispatch({ type: "INCREMENT" }));
 
-// Dispatch the "DECREMENT" action every time the +1 button is pressed
+// Dispatch the "DECREMENT" action every time the -1 button is pressed
 const decrementButton = document.getElementById('decrement');
 decrementButton.addEventListener('click', e => dispatch({ type: "DECREMENT" }));
+
+// Dispatch the "INCREMENT5" action every time the +5 button is pressed
+const increment5Button = document.getElementById('increment5');
+increment5Button.addEventListener('click', e => dispatch({ type: "INCREMENT5" }));
+
+// Dispatch the "DECREMENT" action every time the -5 button is pressed
+const decrement5Button = document.getElementById('decrement5');
+decrement5Button.addEventListener('click', e => dispatch({ type: "DECREMENT5" }));
