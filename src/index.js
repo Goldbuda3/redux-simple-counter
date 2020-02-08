@@ -28,5 +28,5 @@ const colorsDropdown = document.getElementById('colors');
 colorsDropdown.addEventListener('change', e => dispatch({ type: "colors" }));
 
 // //Text Area
-// const textArea = document.getElementById('text');
-// textArea.addEventListener('keyup', e => dispatch({ type: "TEXT"}));
+const textArea = document.getElementById('text');
+textArea.addEventListener('keyup', e => dispatch({ type: "TEXT"}));

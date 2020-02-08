@@ -13,17 +13,20 @@ const reducer = (state = initialState, action) => {
     } else if (type === "DECREMENT") {
         return {
             value: state.value - 1,
-            colors: state.colors = colorsDropdown.value
+            colors: state.colors = 
+            colorsDropdown.value
         }
     } else if (type === "INCREMENT5") {
         return {
             value: state.value + 5,
-            colors: state.colors = colorsDropdown.value
+            colors: state.colors = 
+            colorsDropdown.value
         }
     } else if (type === "DECREMENT5") {
         return {
             value: state.value - 5,
-            colors: state.colors = colorsDropdown.value
+            colors: state.colors = 
+            colorsDropdown.value
         }
     }  else if (type === "colors") {
         return {
