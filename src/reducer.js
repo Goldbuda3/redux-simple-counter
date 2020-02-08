@@ -8,6 +8,10 @@ const reducer = (state = initialState, action) => {
         return {
             value: state.value + 1
         }
+    } else if (type === "DECREMENT") {
+        return {
+            value: state.value - 1
+        }
     }
     return state
 }
