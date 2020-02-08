@@ -22,3 +22,11 @@ increment5Button.addEventListener('click', e => dispatch({ type: "INCREMENT5" })
 // Dispatch the "DECREMENT" action every time the -5 button is pressed
 const decrement5Button = document.getElementById('decrement5');
 decrement5Button.addEventListener('click', e => dispatch({ type: "DECREMENT5" }));
+
+//Colors Dropdown
+const colorsDropdown = document.getElementById('colors');
+colorsDropdown.addEventListener('change', e => dispatch({ type: "colors" }));
+
+// //Text Area
+// const textArea = document.getElementById('text');
+// textArea.addEventListener('keyup', e => dispatch({ type: "TEXT"}));
