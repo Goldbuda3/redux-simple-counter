@@ -4,7 +4,7 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    let { type, value} = action;
+    let { type, value, color,} = action;
     if (type === "CHANGEVALUE") {
         return {
             value: state.value + value,
@@ -15,7 +15,7 @@ const reducer = (state = initialState, action) => {
             value: state.value,
             color: value
         }
-    }  else if (type === "NUMBER") {
+    }  else if (type === "RESETVALUE") {
         return {
             value: value,
             color: state.color

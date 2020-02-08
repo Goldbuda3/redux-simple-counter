@@ -27,6 +27,6 @@ decrement5Button.addEventListener('click', e => dispatch({ type: "CHANGEVALUE", 
 const colorDropdown = document.getElementById('color');
 colorDropdown.addEventListener('change', e => dispatch({ type: "CHANGECOLOR", value: colorDropdown.value }));
 
-// //Text Area
+//Add Number Area
 const input = document.getElementById('number');
-input.addEventListener('change', e => dispatch({ type: "NUMBER", value: parseInt(input.value)}));
+input.addEventListener('input', e => dispatch({ type: "RESETVALUE", value: Number(input.value)}));
